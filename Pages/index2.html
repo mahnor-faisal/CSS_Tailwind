@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body class="bg-white text-[#111] font-[Poppins]">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-[#0f172a]">
+    <nav class="flex justify-between items-center py-4 px-12">
+      <a href="/index.html" class="text-white text-xl flex items-center gap-2">
+        <i class="fa-solid fa-cart-shopping text-[#2563eb]"></i> <strong>E-Commerce</strong>
+      </a>
+      <ul class="flex list-none gap-5">
+        <li><a href="/index.html" class="text-white text-sm hover:text-[#2563eb]">Home</a></li>
+        <li><a href="/Pages/about.html" class="text-white text-sm hover:text-[#2563eb]">About</a></li>
+        <li><a href="/Pages/contact.html" class="text-white text-sm hover:text-[#2563eb]">Contact</a></li>
+      </ul>
+      <div class="flex items-center text-white text-lg">
+        <a href="/Pages/wishlist.html" class="ml-4"><i class="fa-solid fa-heart"></i></a>
+        <a href="/Pages/cart.html" class="ml-4"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="/Pages/adminDash.html" class="ml-4 bg-[#2563eb] text-white py-2 px-5 rounded-lg text-sm hover:bg-[#1e40af] transition">
+          Admin Dashboard
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== PRODUCTS SECTION ===== -->
+    <main>
+      <section class="py-[50px] text-center">
+        <h2 class="text-2xl font-semibold mb-5">Our Products</h2>
+
+        <!-- Search bar -->
+        <div class="mb-6">
+          <input type="text" placeholder="Search products..."
+            class="w-[30%] px-2 py-2 border border-[#ccc] rounded-md" />
+        </div>
+
+        <!-- Category Buttons -->
+        <div class="flex justify-center flex-wrap gap-[25px] mb-10 px-[15px]">
+          <button class="bg-[#007bff] text-white py-[10px] px-[35px] rounded-[10px] font-medium">All</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Electronics</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Clothing</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Home & Furniture</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Beauty & Personal Care</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Toys & Games</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Sports & Outdoors</button>
+        </div>
+
+        <!-- Product Grid (2 rows × 4 cards) -->
+        <div class="flex justify-center flex-wrap ml-[38px] gap-5">
+          <!-- Product Card -->
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/WD_2TB.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">WD 2TB Elements Port</h3>
+            <p class="text-[#007bff] font-bold my-1">$109.95</p>
+            <p class="text-sm mb-2">USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatib</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <!-- Copy and paste for remaining 7 cards -->
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/SanDisk_SSD.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">SanDisk SSD PLUS 1TB</h3>
+            <p class="text-[#007bff] font-bold my-1">$22.30</p>
+            <p class="text-sm mb-2">Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/SiliconPower256GB.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">Silicon Power 256GB</h3>
+            <p class="text-[#007bff] font-bold my-1">$55.99</p>
+            <p class="text-sm mb-2">3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable fas</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/WD_4TB.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">WD 4TB Gaming Drive</h3>
+            <p class="text-[#007bff] font-bold my-1">$15.99</p>
+            <p class="text-sm mb-2">Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacit</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <!-- Second Row (Same layout) -->
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/Acer_SB220Q.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">Acer SB220Q bi 21.5</h3>
+            <p class="text-[#007bff] font-bold my-1">$109.95</p>
+            <p class="text-sm mb-2">Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in t</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/Samsung49_Inch.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">Samsung 49-Inch CHG9</h3>
+            <p class="text-[#007bff] font-bold my-1">$22.30</p>
+            <p class="text-sm mb-2">Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fa</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/Biylaclesen_Women.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">BIYLACLESEN Women's</h3>
+            <p class="text-[#007bff] font-bold my-1">$55.99</p>
+            <p class="text-sm mb-2">Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/Lock_love_women.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">Lock and Love Women</h3>
+            <p class="text-[#007bff] font-bold my-1">$15.99</p>
+            <p class="text-sm mb-2">100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON, Faux</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Pagination -->
+      <div class="flex justify-center gap-2 mt-8">
+        <a href="/index.html" class="px-3 py-1 border border-gray-300 rounded hover:bg-blue-500 hover:text-white text-blue-500">1</a>
+        <a href="/Pages/index2.html" class="px-3 py-1 border border-gray-300 rounded bg-blue-500 text-white">2</a>
+        <a href="/Pages/index3.html" class="px-3 py-1 border border-gray-300 rounded hover:bg-blue-500 hover:text-white text-blue-500">3</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1435] text-white pt-12 pb-5 px-16 mt-16">
+    <div class="flex justify-between flex-wrap gap-10">
+      <div>
+        <h3 class="text-xl mb-3">E-Commerce</h3>
+        <p>Your one-stop shop for fashion, electronics, and more!</p>
+      </div>
+
+      <div>
+        <h4 class="text-lg mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="#" class="hover:underline">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg mb-3">Customer Service</h4>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:underline">Help & Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg mb-3">Contact Us</h4>
+        <p>Lahore, Pakistan</p>
+        <p><i class="fa-solid fa-envelope mr-2"></i> support@gmail.com</p>
+        <p><i class="fa-solid fa-phone mr-2"></i> +92 324 3867199</p>
+      </div>
+    </div>
+
+    <p class="text-center border-t border-gray-700 mt-6 pt-3 text-sm">© 2025 E-Commerce. All rights reserved.</p>
+  </footer>
+</body>
+</html>

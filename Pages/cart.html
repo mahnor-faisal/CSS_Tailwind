@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Cart - E-Commerce</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-sans bg-white text-gray-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-[#0f172a]">
+      <nav class="flex justify-between items-center px-8 py-4">
+        <a
+          href="/index.html"
+          class="text-white text-2xl font-semibold flex items-center gap-2"
+        >
+          <i class="fa-solid fa-cart-shopping text-blue-600"></i>
+          E-Commerce
+        </a>
+
+        <ul class="flex gap-6 list-none">
+          <li><a href="/index.html" class="text-white hover:text-blue-500">Home</a></li>
+          <li><a href="/Pages/about.html" class="text-white hover:text-blue-500">About</a></li>
+          <li><a href="/Pages/contact.html" class="text-white hover:text-blue-500">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4 text-white text-lg">
+          <!-- Heart Icon -->
+          <a href="/Pages/wishlist.html" class="relative">
+            <i class="fa-solid fa-heart"></i>
+            <span
+              class="absolute -top-2 -right-3 bg-blue-600 text-white text-xs font-bold rounded-full px-1.5 py-0.5"
+              >3</span
+            >
+          </a>
+
+          <!-- Cart Icon -->
+          <a href="/Pages/cart.html" class="relative">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span
+              class="absolute -top-2 -right-3 bg-blue-600 text-white text-xs font-bold rounded-full px-1.5 py-0.5"
+              >3</span
+            >
+          </a>
+
+          <!-- Admin Dashboard -->
+          <a
+            href="/Pages/adminDash.html"
+            class="bg-blue-600 hover:bg-blue-800 transition px-4 py-2 rounded-md text-sm font-medium"
+          >
+            Admin Dashboard
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <main class="py-10 px-6 md:px-16 bg-gray-50 min-h-[60vh]">
+      <h2 class="text-center text-3xl font-semibold mb-8">Your Cart</h2>
+
+      <div
+        class="bg-white rounded-lg shadow-md p-6 overflow-x-auto max-w-6xl mx-auto"
+      >
+        <table class="w-full border-collapse text-center">
+          <thead>
+            <tr class="bg-gray-100 text-gray-700">
+              <th class="p-4">Image</th>
+              <th class="p-4">Title</th>
+              <th class="p-4">Price</th>
+              <th class="p-4">Quantity</th>
+              <th class="p-4">Sub Total</th>
+              <th class="p-4">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1 -->
+            <tr class="border-b">
+              <td class="p-4">
+                <img
+                  src="/assets/men_casual_fit.png"
+                  alt="Product 1"
+                  class="w-20 rounded-md mx-auto"
+                />
+              </td>
+              <td class="p-4">Mens Casual Slim Fit</td>
+              <td class="p-4">$15.99</td>
+              <td class="p-4">
+                <div class="flex items-center justify-center gap-2">
+                  <button
+                    class="bg-gray-200 hover:bg-gray-300 rounded px-2 py-1 text-lg"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    value="1"
+                    class="w-12 text-center border rounded py-1"
+                  />
+                  <button
+                    class="bg-gray-200 hover:bg-gray-300 rounded px-2 py-1 text-lg"
+                  >
+                    +
+                  </button>
+                </div>
+              </td>
+              <td class="p-4">$15.99</td>
+              <td class="p-4">
+                <button
+                  class="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded"
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr class="border-b">
+              <td class="p-4">
+                <img
+                  src="/assets/solid_gold_petite.png"
+                  alt="Product 2"
+                  class="w-20 rounded-md mx-auto"
+                />
+              </td>
+              <td class="p-4">Solid Gold Petite Mi</td>
+              <td class="p-4">$168</td>
+              <td class="p-4">
+                <div class="flex items-center justify-center gap-2">
+                  <button
+                    class="bg-gray-200 hover:bg-gray-300 rounded px-2 py-1 text-lg"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    value="1"
+                    class="w-12 text-center border rounded py-1"
+                  />
+                  <button
+                    class="bg-gray-200 hover:bg-gray-300 rounded px-2 py-1 text-lg"
+                  >
+                    +
+                  </button>
+                </div>
+              </td>
+              <td class="p-4">$168.00</td>
+              <td class="p-4">
+                <button
+                  class="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded"
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr>
+              <td class="p-4">
+                <img
+                  src="/assets/Acer_SB220Q.png"
+                  alt="Product 3"
+                  class="w-20 rounded-md mx-auto"
+                />
+              </td>
+              <td class="p-4">Acer SB220Q bi 21.5</td>
+              <td class="p-4">$599</td>
+              <td class="p-4">
+                <div class="flex items-center justify-center gap-2">
+                  <button
+                    class="bg-gray-200 hover:bg-gray-300 rounded px-2 py-1 text-lg"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    value="1"
+                    class="w-12 text-center border rounded py-1"
+                  />
+                  <button
+                    class="bg-gray-200 hover:bg-gray-300 rounded px-2 py-1 text-lg"
+                  >
+                    +
+                  </button>
+                </div>
+              </td>
+              <td class="p-4">$599.00</td>
+              <td class="p-4">
+                <button
+                  class="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded"
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mt-6 text-lg gap-4"
+        >
+          <p><strong>Total:</strong> $782.99</p>
+          <a
+            href="/Pages/checkout.html"
+            class="bg-blue-600 hover:bg-blue-800 text-white px-6 py-3 rounded-md text-base"
+            >Checkout</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0f172a] text-white pt-10 mt-10">
+      <div
+        class="max-w-7xl mx-auto flex flex-wrap justify-around gap-8 px-6 pb-8"
+      >
+        <!-- Col 1 -->
+        <div class="max-w-xs">
+          <h4 class="flex items-center gap-2 text-lg font-semibold mb-3">
+            <i class="fa-solid fa-cart-shopping text-blue-600"></i>
+            E-Commerce
+          </h4>
+          <p class="text-sm">
+            Your one-stop shop for the latest trends in fashion, electronics,
+            and lifestyle. Shop smart. Shop easy.
+          </p>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/index.html" class="hover:text-blue-500">Home</a></li>
+            <li><a href="/Pages/about.html" class="hover:text-blue-500">About</a></li>
+            <li><a href="/Pages/contact.html" class="hover:text-blue-500">Contact</a></li>
+            <li><a href="/Pages/adminDash.html" class="hover:text-blue-500">Dashboard</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="text-lg font-semibold mb-3">Customer Service</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-blue-500">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-blue-500">Terms & Conditions</a></li>
+            <li><a href="#" class="hover:text-blue-500">Help & Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="text-lg font-semibold mb-3">Contact Us</h4>
+          <p class="flex items-center text-sm mb-2">
+            <i class="fa-solid fa-location-dot text-blue-600 mr-2"></i> Lahore,
+            Pakistan
+          </p>
+          <p class="flex items-center text-sm mb-2">
+            <i class="fa-regular fa-envelope text-blue-600 mr-2"></i>
+            support1@gmail.com
+          </p>
+          <p class="flex items-center text-sm mb-3">
+            <i class="fa-solid fa-phone text-blue-600 mr-2"></i> +92 312 3456789
+          </p>
+          <div class="flex gap-3 text-lg">
+            <a href="#" class="hover:text-blue-500"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-blue-500"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-blue-500"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="hover:text-blue-500"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center py-4 text-sm border-t border-gray-700">
+        © 2025 E-Commerce. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body class="font-[Poppins] bg-white text-gray-900">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-[#0f172a]">
+      <nav class="flex justify-between items-center py-4 px-6 md:px-12">
+        <a href="/index.html" class="text-white text-xl font-bold flex items-center gap-2">
+          <i class="fa-solid fa-cart-shopping text-blue-600"></i>
+          E-Commerce
+        </a>
+
+        <ul class="hidden md:flex gap-6">
+          <li><a href="/index.html" class="text-white hover:text-blue-600 font-medium">Home</a></li>
+          <li><a href="/Pages/about.html" class="text-white hover:text-blue-600 font-medium">About</a></li>
+          <li><a href="/Pages/contact.html" class="text-white hover:text-blue-600 font-medium">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+          <a href="/Pages/wishlist.html" class="relative text-white text-xl">
+            <i class="fa-solid fa-heart"></i>
+            <span class="absolute -top-2 -right-2 bg-blue-600 text-xs text-white rounded-full px-1">3</span>
+          </a>
+          <a href="/Pages/cart.html" class="relative text-white text-xl">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="absolute -top-2 -right-2 bg-blue-600 text-xs text-white rounded-full px-1">3</span>
+          </a>
+          <a href="/Pages/adminDash.html" class="bg-blue-600 hover:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm">
+            Admin Dashboard
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="py-12 px-6 md:px-12 text-center">
+      <section>
+        <h2 class="text-2xl font-semibold mb-6">Our Products</h2>
+
+        <!-- Search Bar -->
+        <div class="mb-6">
+          <input
+            type="text"
+            placeholder="Search products..."
+            class="border border-gray-300 rounded-md px-4 py-2 w-full md:w-1/3"
+          />
+        </div>
+
+        <!-- Category Buttons -->
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+          <button class="bg-blue-600 text-white px-5 py-2 rounded-lg">All</button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-5 py-2 rounded-lg">Electronics</button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-5 py-2 rounded-lg">Clothing</button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-5 py-2 rounded-lg">Home & Furniture</button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-5 py-2 rounded-lg">Beauty & Personal Care</button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-5 py-2 rounded-lg">Toys & Games</button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-5 py-2 rounded-lg">Sports & Outdoors</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
+          <!-- Product Card 1 -->
+          <div class="border rounded-lg shadow p-4 hover:-translate-y-1 transition bg-white">
+            <img src="/assets/Rain_jack_women.png" alt="Rain jack women" class="w-full h-52 object-contain mb-3">
+            <h3 class="font-semibold text-lg">Rain Jacket Women Wi</h3>
+            <p class="text-blue-600 font-bold my-2">$39.99</p>
+            <p class="text-sm text-gray-600 mb-4">
+              Lightweight perfect for trip or casual wear---Long sleeve with
+              hooded, adjustable drawstring waist de
+            </p>
+            <div class="flex flex-col gap-2">
+              <button class="bg-green-600 hover:bg-green-700 text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-red-600 hover:bg-red-700 text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="border rounded-lg shadow p-4 hover:-translate-y-1 transition bg-white">
+            <img src="/assets/MBJ_women.png" alt="MBJ women" class="w-full h-52 object-contain mb-3">
+            <h3 class="font-semibold text-lg">MBJ Women's Solid Sh</h3>
+            <p class="text-blue-600 font-bold my-2">$9.85</p>
+            <p class="text-sm text-gray-600 mb-4">
+              95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach,
+              Lightweight fabric with great stretch
+            </p>
+            <div class="flex flex-col gap-2">
+              <button class="bg-green-600 hover:bg-green-700 text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-red-600 hover:bg-red-700 text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="border rounded-lg shadow p-4 hover:-translate-y-1 transition bg-white">
+            <img src="/assets/Opna_women_short.png" alt="Opna women short" class="w-full h-52 object-contain mb-3">
+            <h3 class="font-semibold text-lg">Opna Women's Short S</h3>
+            <p class="text-blue-600 font-bold my-2">$7.95</p>
+            <p class="text-sm text-gray-600 mb-4">
+              100% Polyester, Machine wash, 100% cationic polyester interlock,
+              Machine Wash & Pre Shrunk for a Gre
+            </p>
+            <div class="flex flex-col gap-2">
+              <button class="bg-green-600 hover:bg-green-700 text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-red-600 hover:bg-red-700 text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="border rounded-lg shadow p-4 hover:-translate-y-1 transition bg-white">
+            <img src="/assets/Danvouy_women_T_shirt.png" alt="Danvouy women T-shirt" class="w-full h-52 object-contain mb-3">
+            <h3 class="font-semibold text-lg">DANVOUY Womens T Shi</h3>
+            <p class="text-blue-600 font-bold my-2">$12.99</p>
+            <p class="text-sm text-gray-600 mb-4">
+              95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter
+              Print,V-Neck,Fashion Tees, The fabric is
+            </p>
+            <div class="flex flex-col gap-2">
+              <button class="bg-green-600 hover:bg-green-700 text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-red-600 hover:bg-red-700 text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex justify-center gap-2 mt-8">
+          <a href="/index.html" class="border px-3 py-1 rounded hover:bg-blue-600 hover:text-white text-blue-600">1</a>
+          <a href="/Pages/index2.html" class="border px-3 py-1 rounded hover:bg-blue-600 hover:text-white text-blue-600">2</a>
+          <a href="/Pages/index3.html" class="border px-3 py-1 rounded bg-blue-600 text-white">3</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0a1435] text-white py-10 px-6 md:px-12 mt-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-6">
+        <div>
+          <h3 class="text-xl font-semibold mb-3">E-Commerce</h3>
+          <p>Your one-stop shop for fashion, electronics, and more!</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">About</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+            <li><a href="#" class="hover:underline">Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-3">Customer Service</h4>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+            <li><a href="#" class="hover:underline">Help & Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-3">Contact Us</h4>
+          <p class="text-sm mb-1">Lahore, Pakistan</p>
+          <p class="text-sm mb-1"><i class="fa-solid fa-envelope mr-2"></i>support@gmail.com</p>
+          <p class="text-sm"><i class="fa-solid fa-phone mr-2"></i>+92 324 3867199</p>
+        </div>
+      </div>
+
+      <p class="text-center text-sm border-t border-gray-700 pt-4">
+        © 2025 E-Commerce. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

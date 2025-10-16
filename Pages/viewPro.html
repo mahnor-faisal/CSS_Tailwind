@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View Product - E-Commerce</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-slate-900">
+    <nav class="flex justify-between items-center px-8 py-4">
+      <!-- Logo -->
+      <a href="/index.html" class="text-white text-xl flex items-center space-x-2">
+        <i class="fa-solid fa-cart-shopping text-blue-600"></i>
+        <strong>E-Commerce</strong>
+      </a>
+      <!-- Nav Links -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="/index.html" class="text-white hover:text-blue-600">Home</a></li>
+        <li><a href="/Pages/about.html" class="text-white hover:text-blue-600">About</a></li>
+        <li><a href="/Pages/contact.html" class="text-white hover:text-blue-600">Contact</a></li>
+      </ul>
+      <!-- Icons -->
+      <div class="flex items-center space-x-4 text-white">
+        <a href="/Pages/wishlist.html" class="hover:text-blue-600"><i class="fa-solid fa-heart"></i></a>
+        <a href="/Pages/cart.html" class="hover:text-blue-600"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="/Pages/adminDash.html" class="bg-blue-600 hover:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm">Admin Dashboard</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Layout (Sidebar + Main) -->
+  <div class="flex min-h-[70vh]">
+
+    <!-- Sidebar -->
+    <aside class="w-56 bg-slate-900 text-white p-5 sticky top-[64px] h-screen hidden md:block">
+      <ul class="space-y-5">
+        <li class="flex items-center gap-3 hover:text-blue-600">
+          <i class="fa-solid fa-gauge"></i><a href="/Pages/adminDash.html">Dashboard</a>
+        </li>
+        <li class="flex items-center gap-3 hover:text-blue-600">
+          <i class="fa-solid fa-plus"></i><a href="/Pages/addPro.html">Add Product</a>
+        </li>
+        <li class="flex items-center gap-3 hover:text-blue-600">
+          <i class="fa-solid fa-eye"></i><a href="/Pages/viewPro.html">View Product</a>
+        </li>
+        <li class="flex items-center gap-3 hover:text-blue-600">
+          <i class="fa-solid fa-right-from-bracket"></i><a href="/Pages/login.html">Logout</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-5 md:mx-8 my-6">
+      <div class="bg-white p-8 rounded-lg shadow-lg max-w-5xl mx-auto">
+        <h2 class="text-center text-2xl font-semibold mb-6">View Products</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse">
+            <thead class="bg-gray-100 text-center">
+              <tr>
+                <th class="p-3 border">ID</th>
+                <th class="p-3 border">Image</th>
+                <th class="p-3 border">Title</th>
+                <th class="p-3 border">Description</th>
+                <th class="p-3 border">Price</th>
+                <th class="p-3 border">Action</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <td class="p-3 border whitespace-nowrap">1760559537633</td>
+                <td class="p-3 border"><img src="/assets/laptop.webp" alt="Laptop" class="w-12 h-12 object-cover rounded"></td>
+                <td class="p-3 border">Laptop</td>
+                <td class="p-3 border">Good Laptop with 16GB Ram 1TB SSD.</td>
+                <td class="p-3 border">$1400</td>
+                <td class="p-3 border whitespace-nowrap">
+                  <button class="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded mr-2">Edit</button>
+                  <button class="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3 border whitespace-nowrap">1760559566662</td>
+                <td class="p-3 border"><img src="/assets/Iphone.webp" alt="Iphone" class="w-12 h-12 object-cover rounded"></td>
+                <td class="p-3 border">Iphone</td>
+                <td class="p-3 border">Apple Iphone 256GB memory with complete box Pack.</td>
+                <td class="p-3 border">$190</td>
+                <td class="p-3 border whitespace-nowrap">
+                  <button class="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded mr-2">Edit</button>
+                  <button class="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3 border whitespace-nowrap">1760559597055</td>
+                <td class="p-3 border"><img src="/assets/blender.webp" alt="Blender" class="w-12 h-12 object-cover rounded"></td>
+                <td class="p-3 border">Blender</td>
+                <td class="p-3 border">Home appliances best blender with various cutters.</td>
+                <td class="p-3 border">$120</td>
+                <td class="p-3 border whitespace-nowrap">
+                  <button class="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded mr-2">Edit</button>
+                  <button class="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded">Remove</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-white pt-10 mt-10">
+    <div class="flex flex-wrap justify-around px-6 pb-8 gap-6">
+      <div class="max-w-xs">
+        <h4 class="flex items-center gap-2 text-lg mb-2">
+          <i class="fa-solid fa-cart-shopping text-blue-600"></i> E-Commerce
+        </h4>
+        <p>Your one-stop shop for the latest trends in fashion, electronics, and lifestyle. Shop smart. Shop easy.</p>
+      </div>
+      <div>
+        <h4 class="text-lg mb-2">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/index.html" class="hover:text-blue-600">Home</a></li>
+          <li><a href="/Pages/about.html" class="hover:text-blue-600">About</a></li>
+          <li><a href="/Pages/contact.html" class="hover:text-blue-600">Contact</a></li>
+          <li><a href="/Pages/adminDash.html" class="hover:text-blue-600">Dashboard</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg mb-2">Customer Service</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-blue-600">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-blue-600">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:text-blue-600">Help & Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg mb-2">Contact Us</h4>
+        <p><i class="fa-solid fa-location-dot text-blue-600 mr-2"></i> Lahore, Pakistan</p>
+        <p><i class="fa-regular fa-envelope text-blue-600 mr-2"></i> support1@gmail.com</p>
+        <p><i class="fa-solid fa-phone text-blue-600 mr-2"></i> +92 312 3456789</p>
+        <div class="flex space-x-4 mt-2">
+          <a href="#" class="hover:text-blue-600"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-blue-600"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="hover:text-blue-600"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="hover:text-blue-600"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-sm py-4 border-t border-slate-800">
+      © 2025 E-Commerce. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

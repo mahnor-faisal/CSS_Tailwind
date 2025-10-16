@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - E-Commerce</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body class="font-sans bg-white text-[#111]">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-[#0f172a]">
+    <nav class="flex justify-between items-center py-4 px-8 md:px-12">
+      <a href="/index.html" class="text-white text-xl font-bold flex items-center">
+        <i class="fa-solid fa-cart-shopping text-[#2563eb] mr-2"></i> E-Commerce
+      </a>
+      <ul class="hidden md:flex space-x-6 text-white text-sm">
+        <li><a href="/index.html" class="hover:text-[#2563eb]">Home</a></li>
+        <li><a href="/Pages/about.html" class="hover:text-[#2563eb]">About</a></li>
+        <li><a href="/Pages/contact.html" class="text-[#2563eb]">Contact</a></li>
+      </ul>
+      <div class="flex items-center space-x-4 text-white text-lg">
+        <a href="/Pages/wishlist.html"><i class="fa-solid fa-heart"></i></a>
+        <a href="/Pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="/Pages/adminDash.html" class="bg-[#2563eb] px-4 py-2 rounded-lg text-sm hover:bg-[#1e40af] transition">Admin Dashboard</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Contact Section -->
+  <main class="flex justify-center items-center min-h-[80vh] bg-[#f4f4f4] py-32">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+      <h2 class="text-center text-2xl font-bold text-[#2563eb] mb-2">Contact Us</h2>
+      <p class="text-center text-sm text-gray-600 mb-5">Have any questions? Feel free to reach out to us!</p>
+
+      <form class="space-y-4">
+        <div>
+          <label for="email" class="block text-sm mb-1">Your Email</label>
+          <input type="email" id="email" placeholder="name@example.com" required
+            class="w-full border border-black rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb]" />
+        </div>
+
+        <div>
+          <label for="subject" class="block text-sm mb-1">Subject</label>
+          <input type="text" id="subject" placeholder="Enter subject" required
+            class="w-full border border-black rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2563eb]" />
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm mb-1">Your Message</label>
+          <textarea id="message" placeholder="Write your message here..." required
+            class="w-full border border-black rounded-lg px-3 py-2 text-sm h-28 resize-none focus:outline-none focus:ring-2 focus:ring-[#2563eb]"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-[#2563eb] text-white py-3 rounded-lg text-base hover:bg-[#1e40af] transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#0f172a] text-white pt-10">
+    <div class="flex flex-wrap justify-around px-6 lg:px-16">
+      <!-- Column 1 -->
+      <div class="max-w-xs mb-6">
+        <h4 class="flex items-center gap-2 mb-2 text-lg font-semibold">
+          <i class="fa-solid fa-cart-shopping text-[#2563eb]"></i> E-Commerce
+        </h4>
+        <p class="text-sm">Your one-stop shop for the latest trends in fashion, electronics, and lifestyle. Shop smart. Shop easy.</p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="max-w-xs mb-6">
+        <h4 class="mb-2 font-semibold">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/index.html" class="hover:text-[#2563eb]">Home</a></li>
+          <li><a href="/Pages/about.html" class="hover:text-[#2563eb]">About</a></li>
+          <li><a href="/Pages/contact.html" class="hover:text-[#2563eb]">Contact</a></li>
+          <li><a href="#" class="hover:text-[#2563eb]">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="max-w-xs mb-6">
+        <h4 class="mb-2 font-semibold">Customer Service</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-[#2563eb]">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-[#2563eb]">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:text-[#2563eb]">Help & Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="max-w-xs mb-6">
+        <h4 class="mb-2 font-semibold">Contact Us</h4>
+        <p class="text-sm mb-1"><i class="fa-solid fa-location-dot text-[#2563eb] mr-2"></i> Lahore, Pakistan</p>
+        <p class="text-sm mb-1"><i class="fa-regular fa-envelope text-[#2563eb] mr-2"></i> support1@gmail.com</p>
+        <p class="text-sm mb-3"><i class="fa-solid fa-phone text-[#2563eb] mr-2"></i> +92 312 3456789</p>
+        <div class="flex space-x-3 text-lg">
+          <a href="#" class="hover:text-[#2563eb]"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-[#2563eb]"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="hover:text-[#2563eb]"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="hover:text-[#2563eb]"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center py-4 text-sm border-t border-gray-600 mt-4">
+      © 2025 E-Commerce. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-white text-[#111] font-[Poppins,sans-serif]">
+
+    <!-- ===== HEADER ===== -->
+    <header class="sticky top-0 z-50 bg-[#0f172a]">
+      <nav class="flex justify-between items-center py-[15px] px-[50px]">
+        <a href="/index.html" class="flex items-center text-white text-xl font-semibold">
+          <i class="fa-solid fa-cart-shopping text-[#2563eb] mr-2"></i>
+          E-Commerce
+        </a>
+
+        <ul class="flex list-none gap-5">
+          <li><a href="/index.html" class="text-[#2563eb] text-sm hover:text-[#2563eb] border-b-2 border-transparent hover:border-[#2563eb] active:text-[#2563eb]">Home</a></li>
+          <li><a href="/Pages/about.html" class="text-white text-sm hover:text-[#2563eb]">About</a></li>
+          <li><a href="/Pages/contact.html" class="text-white text-sm hover:text-[#2563eb]">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center">
+          <a href="/Pages/wishlist.html" class="text-white ml-4 text-lg relative">
+            <i class="fa-solid fa-heart"></i>
+          </a>
+          <a href="/Pages/cart.html" class="text-white ml-4 text-lg relative">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a href="/Pages/adminDash.html" class="bg-[#2563eb] hover:bg-[#1e40af] text-white px-4 py-2 rounded-lg text-sm ml-4 transition">
+            Admin Dashboard
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== PRODUCTS SECTION ===== -->
+    <main>
+      <section class="py-[50px] text-center">
+        <h2 class="text-2xl font-semibold mb-5">Our Products</h2>
+
+        <!-- Search bar -->
+        <div class="mb-6">
+          <input type="text" placeholder="Search products..."
+            class="w-[30%] px-2 py-2 border border-[#ccc] rounded-md" />
+        </div>
+
+        <!-- Category Buttons -->
+        <div class="flex justify-center flex-wrap gap-[25px] mb-10 px-[15px]">
+          <button class="bg-[#007bff] text-white py-[10px] px-[35px] rounded-[10px] font-medium">All</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Electronics</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Clothing</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Home & Furniture</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Beauty & Personal Care</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Toys & Games</button>
+          <button class="bg-[#e8eaed] text-[#222] py-[10px] px-[35px] rounded-[10px] font-medium hover:bg-[#007bff] hover:text-white transition">Sports & Outdoors</button>
+        </div>
+
+        <!-- Product Grid (2 rows × 4 cards) -->
+        <div class="flex justify-center flex-wrap ml-[38px] gap-5">
+          <!-- Product Card -->
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/blue_bag.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">Fjallraven - Foldac</h3>
+            <p class="text-[#007bff] font-bold my-1">$109.95</p>
+            <p class="text-sm mb-2">Your perfect pack for everyday use and walks in the forest.</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <!-- Copy and paste for remaining 7 cards -->
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/men_shirt.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">Mens Casual Premium</h3>
+            <p class="text-[#007bff] font-bold my-1">$22.30</p>
+            <p class="text-sm mb-2">Slim-fitting style, contrast raglan long sleeve...</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/men_cotton_jack.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">Mens Cotton Jacket</h3>
+            <p class="text-[#007bff] font-bold my-1">$55.99</p>
+            <p class="text-sm mb-2">Great outerwear jackets for Spring/Autumn/Winter.</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/men_casual_fit.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">Mens Casual Slim Fit</h3>
+            <p class="text-[#007bff] font-bold my-1">$15.99</p>
+            <p class="text-sm mb-2">The color could be slightly different between on screen and in practice.</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <!-- Second Row (Same layout) -->
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/john_women_barcelet.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">John Women Bracelet</h3>
+            <p class="text-[#007bff] font-bold my-1">$109.95</p>
+            <p class="text-sm mb-2">Perfect bracelet for women and daily use.</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/solid_gold_petite.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">Solid Gold Petite</h3>
+            <p class="text-[#007bff] font-bold my-1">$22.30</p>
+            <p class="text-sm mb-2">Slim gold bracelet with minimalistic design.</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/white_gold_plated.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">White Gold Plated</h3>
+            <p class="text-[#007bff] font-bold my-1">$55.99</p>
+            <p class="text-sm mb-2">Beautiful white gold jewelry for women.</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <div class="w-[310px] border border-[#ddd] rounded-[10px] p-[15px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition">
+            <img src="/assets/pierced_owl_ring.png" alt="" class="w-full h-[200px] object-contain mb-2">
+            <h3 class="font-semibold text-lg">Rose Gold Ring</h3>
+            <p class="text-[#007bff] font-bold my-1">$15.99</p>
+            <p class="text-sm mb-2">Elegant rose gold ring for daily and party wear.</p>
+            <div class="flex flex-col gap-2 mt-2">
+              <button class="bg-[#00b140] text-white py-2 rounded">Add to Cart</button>
+              <button class="bg-[#f44336] text-white py-2 rounded">Add to Wishlist</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex justify-center gap-2 mt-[30px]">
+          <a href="/index.html" class="px-3 py-1 border border-[#ccc] bg-[#007bff] text-white rounded">1</a>
+          <a href="/Pages/index2.html" class="px-3 py-1 border border-[#ccc] text-[#007bff] rounded hover:bg-[#007bff] hover:text-white transition">2</a>
+          <a href="/Pages/index3.html" class="px-3 py-1 border border-[#ccc] text-[#007bff] rounded hover:bg-[#007bff] hover:text-white transition">3</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-[#0a1435] text-white pt-[50px] pb-[20px] px-[60px] mt-[60px]">
+      <div class="flex justify-between flex-wrap gap-[30px]">
+        <div>
+          <h3 class="mb-[15px] text-lg font-semibold">E-Commerce</h3>
+          <p>Your one-stop shop for fashion, electronics, and more!</p>
+        </div>
+
+        <div>
+          <h4 class="mb-[15px] text-lg font-medium">Quick Links</h4>
+          <ul class="space-y-1 text-sm text-[#ddd]">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">About</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+            <li><a href="#" class="hover:underline">Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="mb-[15px] text-lg font-medium">Customer Service</h4>
+          <ul class="space-y-1 text-sm text-[#ddd]">
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+            <li><a href="#" class="hover:underline">Help & Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="mb-[15px] text-lg font-medium">Contact Us</h4>
+          <p class="mb-1">Lahore, Pakistan</p>
+          <p class="mb-1"><i class="fa-solid fa-envelope mr-2"></i> support@gmail.com</p>
+          <p><i class="fa-solid fa-phone mr-2"></i> +92 324 3867199</p>
+        </div>
+      </div>
+
+      <p class="text-center border-t border-[#333] mt-[30px] pt-[10px] text-[13px] text-[#ddd]">
+        © 2025 E-Commerce. All rights reserved.
+      </p>
+    </footer>
+
+  </body>
+</html>
